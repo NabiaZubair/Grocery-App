@@ -1,0 +1,99 @@
+
+.nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap:16px;
+padding: 10px 28px;
+gap:16px;
+position: static;
+top:0;
+z-index: 100;
+
+}
+.logoWrapper{
+    flex-Shrink:0;
+}
+
+.logo{
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+}
+.location{
+    display: flex;
+    align-items: center;
+    gap:8px;
+
+}
+.location h4{
+    font-weight: 300;
+    font-size: 0.8rem;
+    margin: 0;
+}
+.locationBtn{
+    display: flex; 
+    align-items: center;
+    gap:4px;
+    border: none;
+      background-color: transparent;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 1rem;
+}
+ 
+.locationBtn:hover,
+.locationBtn:focus-visible{
+    color:grey;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+   max-width:  600px;
+   flex:1 1 300px;
+    background-color:#dadada;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search input{
+    border: none;
+    background-color:transparent;
+    height: 100%;
+    flex:1;
+    padding: 0px 12px ;
+    font-size: 1rem;
+    outline: none;
+}
+
+.search button{
+    height: 100%;
+    border: none;
+    padding: 0px 12px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    
+}
+.cartSection{
+    display: flex;
+    align-items: center;
+    gap:24px
+}
+.cartSection button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    font-display: flex;
+}
+.cartSection button:hover,
+.cartSection button:focus-visible{
+    color: grey;
+}
