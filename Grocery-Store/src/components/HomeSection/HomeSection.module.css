@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+
+.container h3 {
+    font-weight: 400;
+    font-size: 1rem;
+    color: rgb(154, 247, 16);
+}
+
+.container h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.foodImage {
+    height: 450px;
+    width: auto;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn {
+    border: none;
+    border-radius: 20px;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px;
+    margin-top: 20px;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.btnArrow {
+    background-color: white;
+    border-radius: 100%;
+    
+}
