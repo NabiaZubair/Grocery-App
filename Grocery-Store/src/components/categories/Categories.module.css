@@ -1,0 +1,64 @@
+.categories{
+    padding: 30px;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.categories h2{
+    font-weight: 400;
+}
+
+.categories h1 {
+    color: green;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+.btn {
+    background-color: green;
+    border-radius: 30px;
+
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    padding: 6px;
+    height: 46px;
+}
+
+.icon {
+    background-color: white;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    background-color: #f3d8b5;
+    height: 220px;
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column
+}
+
+.cardImage {
+    
+    height: 140px;
+    width: auto;
+}
+
+.cardContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+}
