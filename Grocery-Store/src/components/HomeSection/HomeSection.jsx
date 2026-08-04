@@ -1,5 +1,5 @@
 import React from 'react'
-import foodImage from "../../assets/images/healthy-food.jpeg"
+import foodImage from "../../assets/images/vegtableBasket-png.webp"
 import styles from './HomeSection.module.css'
 import { ArrowRight } from 'lucide-react'
 

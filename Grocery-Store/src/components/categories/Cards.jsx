@@ -10,7 +10,7 @@ const Cards = ({ category }) => {
             <img src={category.image}
                 className={styles.cardImage}
             />
-            <div>
+            <div className={styles.textContent}>
                 <h3 className={styles.cardText}>
                     {category.title}
                 </h3>

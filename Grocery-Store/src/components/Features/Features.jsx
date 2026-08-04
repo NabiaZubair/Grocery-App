@@ -7,7 +7,7 @@ const Features = () => {
       <div><Warehouse size={50} color="green" />Product from organic form</div>
       <div><House size={50} color="green"/>Free Home Delivery</div>
       <div><ShoppingBag size={50} color="green"/> Promotion of the week</div>
-      <div><Tag size={50} color="green" />-20% off on all vegetables</div>
+      <div><Tag size={50} color="green" />20% off on all vegetables</div>
     </div>
   )
 }

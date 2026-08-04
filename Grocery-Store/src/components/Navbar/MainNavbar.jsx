@@ -5,7 +5,7 @@ import { ChevronDown } from 'lucide-react'
 const MainNavbar = () => {
     return (
         <nav className={styles.nav}>
-            <button type='button' className={styles.categories}><span>All Categories </span><ChevronDown size={18} /></button>
+            <button type='button' className={styles.categories}><span>All Categories </span> <span><ChevronDown size={18} /></span></button>
 
             <ul className={styles.navLinks}>
                 <li> <a href='/'>Home</a></li>
@@ -16,10 +16,7 @@ const MainNavbar = () => {
                 <li> <a href='contact'>Contact</a></li>
             </ul>
 
-            <div className={styles.contact}>
-                <a href="+92 300 1234567">+92 300 1234567</a>
-                <button className={styles.btn} type="button">Gift card</button>
-            </div>
+           
             
         </nav>
     )

@@ -1,39 +1,34 @@
-.categories{
+.categories {
     padding: 30px;
-}
-.heading{
     display: flex;
-    align-items: center;
     justify-content: space-between;
-}
-.categories h2{
-    font-weight: 400;
+
 }
 
 .categories h1 {
-    color: green;
+    color: #236002;
     font-weight: 600;
     font-size: 2rem;
 }
 
 .btn {
-    background-color: green;
+    background-color: #7acd32;
     border-radius: 30px;
-
+    height: 35px;
+    gap: 5px;
     border: none;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    gap: 16px;
-    padding: 6px;
-    height: 46px;
+    justify-content: space-between;
+    padding: 0px 6px;
+
 }
 
 .icon {
     background-color: white;
     border-radius: 50%;
-    height: 35px;
-    width: 35px;
+    height: 30px;
+    width: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,24 +36,36 @@
 
 .cards {
     background-color: #f3d8b5;
-    height: 220px;
+    height: 240px;
     width: 200px;
-    border-radius: 10px;
+    border-radius: 20px;
     display: flex;
     align-items: center;
-    flex-direction: column
+    flex-direction: column;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: scale(1.05);
 }
 
 .cardImage {
-    
+
     height: 140px;
     width: auto;
 }
-
-.cardContainer{
-    display: flex;
-    flex-wrap: wrap;
-    gap:20px;
-    justify-content: center;
-    align-items: center;
+.textContent
+{
+    padding: 10px;
+    text-align: center;
 }
+
+.container {
+    display: flex;
+   
+    padding: 30px;
+}
+
+
+

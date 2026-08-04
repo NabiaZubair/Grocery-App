@@ -2,14 +2,16 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 10px;
-    margin-top: 40px;
+    height: 500px;
+    background-color:#e8fcda;
+    margin-top: 20px;
+    border-radius: 2px;
 }
 
 .container h3 {
     font-weight: 400;
     font-size: 1rem;
-    color: rgb(154, 247, 16);
+    color:#236002;
 }
 
 .container h1 {
@@ -20,16 +22,16 @@
 }
 
 .foodImage {
-    height: 450px;
+    height: 500px;
     width: auto;
     object-fit: cover;
-    border-radius: 50%;
+   background-color:#e8fcda;
 }
 
 .btn {
     border: none;
     border-radius: 20px;
-    background-color: greenyellow;
+    background-color:#7acd32;
     display: flex;
     align-items: center;
     gap: 10px;
