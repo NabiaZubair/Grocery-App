@@ -5,7 +5,7 @@ import Cards from './Cards.jsx'
 import categories from '../../Data/Categories.js'
 import { Swiper, SwiperSlide } from "swiper/react"
 import { Navigation } from 'swiper/modules'
-import {useRef} from "react"
+
 import 'swiper/css'
 import 'swiper/css/navigation'
 
@@ -25,7 +25,7 @@ const Categories = () => {
           modules={[Navigation]}
           navigation
           loop={true}
-          slidesPerView={6}
+          slidesPerView={5.2}
           spaceBetween={6}>
           {categories.map((category) => (
             <SwiperSlide key={category.id}>
