@@ -5,6 +5,7 @@ import Features from './components/Features/Features'
 import Categories from './components/categories/Categories'
 import FeaturedProducts from './components/FeaturedProducts/FeaturedProducts'
 import Sale from "./components/Sale/Sale.jsx"
+import BestSales from './components/BestSales/BestSales.jsx'
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
     <Categories />
     <FeaturedProducts />
     <Sale />
+    <BestSales/>
     </>
   )
 }
