@@ -55,6 +55,20 @@ const categories = [
     image: spices,
     items: 10,
     bgColor:"#b5b5f3"
+  },
+  {
+    id: 8,
+    title: "Nuts",
+    image: nuts,
+    items: 8,
+    bgColor:"#f3b5c4"
+  },
+  {
+    id: 9,
+    title: "Spices",
+    image: spices,
+    items: 10,
+    bgColor:"#b5b5f3"
   }
 ];
 export default categories

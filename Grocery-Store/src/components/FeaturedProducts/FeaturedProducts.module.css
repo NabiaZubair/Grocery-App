@@ -1,0 +1,30 @@
+.productContainer {
+    padding: 40px;
+
+}
+
+.productContainer h2 {
+    font-size: 2rem;
+    font-weight: 600;
+
+}
+
+.categories {
+    padding: 20px 0px;
+    display: flex;
+    gap: 42px
+}
+
+.categories button {
+    border: none;
+    border-radius: 18px;
+    padding: 8px 12px;
+    background-color: white;
+    border: 1px solid rgb(136, 134, 134);
+}
+.products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}

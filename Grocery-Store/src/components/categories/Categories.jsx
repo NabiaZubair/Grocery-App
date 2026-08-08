@@ -1,6 +1,6 @@
-import React, { useRef } from 'react'
 import styles from './Categories.module.css'
 import { ArrowRight, ArrowLeft } from 'lucide-react'
+import { useRef } from 'react'
 import Cards from './Cards.jsx'
 import categories from '../../Data/Categories.js'
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -10,6 +10,8 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 
 const Categories = () => {
+  const prevRef = useRef(null);
+  const nextRef = useRef(null);
 
   return (
     <div>
@@ -20,13 +22,30 @@ const Categories = () => {
       </div>
 
       <div className={styles.container}>
+        <button ref={prevRef} className={ styles.prevArrow}>
+          <ArrowLeft size={24} />
+        </button>
+        <button ref={nextRef}  className={styles.nextArrow}>
+          <ArrowRight size={24} />
+        </button>
 
         <Swiper
           modules={[Navigation]}
-          navigation
+          navigation={{
+            prevEl: prevRef.current,
+            nextEl: nextRef.current,
+          }}
+
+          onBeforeInit={(swiper) => {
+            swiper.params.navigation.prevEl = prevRef.current;
+            swiper.params.navigation.nextEl = nextRef.current;
+
+          }}
+
           loop={true}
-          slidesPerView={5.2}
-          spaceBetween={6}>
+          slidesPerView={6.2}
+          className={styles.swiper}>
+
           {categories.map((category) => (
             <SwiperSlide key={category.id}>
               <Cards category={category} />
@@ -34,13 +53,10 @@ const Categories = () => {
           ))}
         </Swiper>
 
+
+
       </div>
-    </div>
-
-
-
-
-
+    </div >
   )
 }
 

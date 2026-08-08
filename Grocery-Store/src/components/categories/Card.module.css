@@ -1,0 +1,29 @@
+.cards {
+    background-color: #f3d8b5;
+    height: 240px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.cards:hover {
+    transform: scale(1.05);
+    z-index: 2;
+    position: relative;
+}
+
+.cardImage {
+
+    height: 140px;
+    width: auto;
+}
+.textContent
+{
+    padding: 10px;
+    text-align: center;
+}

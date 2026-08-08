@@ -34,38 +34,63 @@
     justify-content: center;
 }
 
-.cards {
-    background-color: #f3d8b5;
-    height: 240px;
-    width: 200px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    flex-shrink: 0;
-    transition: transform 0.3s ease;
-}
-
-.cards:hover {
-    transform: scale(1.05);
-}
-
-.cardImage {
-
-    height: 140px;
-    width: auto;
-}
-.textContent
-{
-    padding: 10px;
-    text-align: center;
-}
-
 .container {
     display: flex;
-   
-    padding: 30px;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+
+.swiper {
+    width: 100%;
+    padding: 30px 20px;
+}
+
+.swiper :global(.swiper-wrapper) {
+    padding: 20px 5px;
 }
 
 
 
+.arrow:hover {
+    background-color: greenyellow;
+    color: white;
+}
+
+
+.prevArrow {
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    z-index: 10;
+      flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: grey;
+    border: 1px solid gray;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   
+    
+}
+
+.nextArrow {
+    position: absolute;
+    top: 50%;
+    right: 18px;
+    z-index: 10;
+
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
